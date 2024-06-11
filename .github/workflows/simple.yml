@@ -1,5 +1,3 @@
-# This is a basic workflow to help you get started with Actions
-
 name: CI
 
 # Controls when the workflow will run
@@ -37,6 +35,13 @@ jobs:
 
       - name: Navigate to Challenge 1
         run: |
-          echo Navigate to challeng 1
+          echo Navigate to challenge 1
           pwd
+        working-directory: ./challenge_1/example_directory
+
+      - name: Challenge 2
+        run: | 
+          ls -a
+          touch ci-file.txt
+          echo "hello world" >> ci-file.txt
         working-directory: ./challenge_1/example_directory
