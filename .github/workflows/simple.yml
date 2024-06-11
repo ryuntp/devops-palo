@@ -44,4 +44,5 @@ jobs:
           ls -a
           touch ci-file.txt
           echo "hello world" >> ci-file.txt
+          cat ci-file.txt
         working-directory: ./challenge_1/example_directory
